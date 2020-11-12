@@ -34,6 +34,7 @@ class Square extends Polygon {
     }
 
     get area() {
+        // if (this.isValid()) { ...how to get this to work?
         if (this.countSides === 4 && (!this.sideLengths.find(num => num != this.sideLengths[0]))) {
             let [a,b] = this.sideLengths;
             return a*b;
